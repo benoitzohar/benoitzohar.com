@@ -12,12 +12,12 @@ const links = [
     icon: ResumeIcon,
     title: "Resume",
     href: "/resume"
-  },*/
+  },
   {
     icon: TwitterIcon,
     title: "Blog",
     href: "/blog"
-  },
+  },*/
   {
     icon: TwitterIcon,
     title: "Twitter",
@@ -26,7 +26,7 @@ const links = [
   {
     icon: LinkedInIcon,
     title: "LinkedIn",
-    href: ""
+    href: "https://www.linkedin.com/in/benoitzohar/"
   },
   {
     icon: GithubIcon,
