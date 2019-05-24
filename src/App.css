@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "Source Sans";
-  src: url("./assets/SourceSansVariable-Roman.ttf.woff2") format("woff2"),
-    url("./assets/SourceSansVariable-Roman.ttf.woff") format("woff"),
-    url("./assets/SourceSansVariable-Roman.ttf") format("truetype");
-}
-
 main {
   max-width: 38rem;
   padding: 2rem;
@@ -13,8 +6,6 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "Source Sans";
-  font-variation-settings: "wght" 100, "wdth" 100;
 }
 
 .avatar {
@@ -28,12 +19,12 @@ main {
 }
 
 h1 {
-  font-variation-settings: "wght" 400;
+  font-weight: 400;
   text-align: center;
 }
 
 h2 {
-  font-variation-settings: "wght" 200;
+  font-weight: 300;
   text-align: center;
 }
 
