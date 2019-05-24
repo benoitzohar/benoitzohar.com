@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "etc-trispace";
-  src: url("./assets/ETCTrispaceVariable.woff2") format("woff2-variations");
+  font-family: "Source Sans";
+  src: url("./assets/SourceSansVariable-Roman.ttf.woff2") format("woff2"),
+    url("./assets/SourceSansVariable-Roman.ttf.woff") format("woff"),
+    url("./assets/SourceSansVariable-Roman.ttf") format("truetype");
 }
 
 main {
@@ -11,7 +13,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-family: "etc-trispace";
+  font-family: "Source Sans";
   font-variation-settings: "wght" 100, "wdth" 100;
 }
 
@@ -26,12 +28,12 @@ main {
 }
 
 h1 {
-  font-variation-settings: "wght" 900, "wdth" 160;
+  font-variation-settings: "wght" 400;
   text-align: center;
 }
 
 h2 {
-  font-variation-settings: "wght" 600, "wdth" 130;
+  font-variation-settings: "wght" 200;
   text-align: center;
 }
 
