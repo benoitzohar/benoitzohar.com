@@ -1,2 +1,40 @@
-.App {
+@font-face {
+  font-family: "etc-trispace";
+  src: url("./assets/ETCTrispaceVariable.woff2") format("woff2-variations");
+}
+
+main {
+  max-width: 38rem;
+  padding: 2rem;
+  margin: auto;
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "etc-trispace";
+  font-variation-settings: "wght" 100, "wdth" 100;
+}
+
+.avatar {
+  height: 200px;
+  width: 200px;
+}
+
+.home-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-variation-settings: "wght" 900, "wdth" 160;
+  text-align: center;
+}
+
+h2 {
+  font-variation-settings: "wght" 600, "wdth" 130;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }

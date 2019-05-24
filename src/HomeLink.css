@@ -1,0 +1,9 @@
+.home-link {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+.home-link > .icon {
+  height: 20px;
+}
