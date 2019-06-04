@@ -9,4 +9,5 @@ body {
     #f4f4f4 71%,
     #ecf2f5 100%
   );
+  background-size: 100% auto, cover;
 }
