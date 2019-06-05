@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-navi";
 
 import "./HomeLink.css";
 
@@ -11,11 +11,12 @@ export default props => {
     </Fragment>
   );
   return props.external ? (
+    // TODO: get rid of `external` with navi?
     <a href={props.link} className="home-link">
       {linkContent}
     </a>
   ) : (
-    <Link to={props.link} className="home-link">
+    <Link href={props.link} className="home-link">
       {linkContent}
     </Link>
   );

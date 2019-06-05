@@ -1,23 +1,30 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import Helmet from "react-helmet";
-import { BrowserRouter, Route } from "react-router-dom";
+import { mount, route, lazy } from "navi";
+import { Router, View } from "react-navi";
+
+import Home from "./Home/Home";
 
 import "./App.css";
 
-import Home from "./Home/Home";
-import BlogList from "./Blog/BlogList";
+const routes = mount({
+  "/": route({
+    view: <Home />
+  }),
+  "/blog": lazy(() => import("./Blog/BlogList"))
+});
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router routes={routes}>
         <main>
           <Helmet title="Benoit Zohar" />
-
-          <Route path="/" exact component={Home} />
-          <Route path="/blog/" component={BlogList} />
+          <Suspense fallback={null}>
+            <View />
+          </Suspense>
         </main>
-      </BrowserRouter>
+      </Router>
     );
   }
 }

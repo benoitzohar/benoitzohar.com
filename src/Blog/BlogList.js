@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { route } from "navi";
 
 import { getEntries } from "./blog-helpers";
 const entries = getEntries();
@@ -7,7 +8,7 @@ function Entry(props) {
   return <li>{props.entry}</li>;
 }
 
-export default function BlogList() {
+function BlogList() {
   return (
     <Fragment>
       Blog
@@ -19,3 +20,7 @@ export default function BlogList() {
     </Fragment>
   );
 }
+
+export default route({
+  getView: BlogList
+});
