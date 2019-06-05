@@ -6,7 +6,16 @@ In [this post](https://benoitzohar.com/blog/TODO) I wrote that I wanted to exper
 
 The problem is that I couldn't find a variable version of `Source Sans` in `woff2`, so the entire loaded font weighted `55kb`. Compared to 2 non-variable font files in `woff2`, which weight `26kb` combined, and since I'm only using 2 `font-weight`s: 300 and 400 so far. Using non-variable fonts seams to be the way to go.
 
-## To host or not to host
+## To host or not to host (the custom fonts)
+
+The answer to this question is not binary. But in our case, taking advantage of a CDN for our fonts has multiple advantages:
+
+- we don't have to optimize the fonts for each browser
+- there's a good chance that the font file is already **cached** by the user's browser, which will reduce the load time.
+
+That is why I decided to use the [Google Fonts CDN](https://developers.google.com/fonts/docs/getting_started) to import `Source Sans Pro` into my website.
+
+The CDN already supports [HTTP/2](https://en.wikipedia.org/wiki/HTTP/2) and uses [gzip](https://www.gzip.org/) so we don't have to handle that.
 
 ## FOUT or FOIT?
 
