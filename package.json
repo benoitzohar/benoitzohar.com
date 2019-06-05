@@ -83,7 +83,7 @@
     }
   },
   "reactSnap": {
-    "inlineCss": true
+    "inlineCss": false
   },
   "jest": {
     "collectCoverageFrom": [
