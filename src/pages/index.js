@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 
-import HomeLink from "./HomeLink";
+import HomeLink from "../components/HomeLink";
+import Meta from "../components/Meta";
 import Avatar from "../assets/avatar-round.svg";
 import TwitterIcon from "../assets/icons/twitter.svg";
 import BlogIcon from "../assets/icons/twitter.svg";
@@ -35,7 +36,8 @@ const links = [
 
 export default function Home() {
   return (
-    <Fragment>
+    <div className="home">
+      <Meta />
       <img className="avatar" src={Avatar} alt="Avatar" />
       <h1>Benoit Zohar</h1>
       <h2>
@@ -53,6 +55,6 @@ export default function Home() {
           />
         ))}
       </div>
-    </Fragment>
+    </div>
   );
 }

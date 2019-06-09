@@ -1,32 +1,24 @@
-import React, { Component, Suspense } from "react";
-import Helmet from "react-helmet";
-import { mount, route, lazy } from "navi";
-import { Router, View } from "react-navi";
+import React from "react";
+import { Root, Routes } from "react-static";
+import { Router } from "@reach/router";
 
-import Home from "./Home/Home";
+import Menu from "./components/Menu";
 
 import "./App.css";
 
-const routes = mount({
-  "/": route({
-    view: <Home />
-  }),
-  "/blog": lazy(() => import("./Blog/BlogList"))
-});
-
-class App extends Component {
-  render() {
-    return (
-      <Router routes={routes}>
+function App() {
+  return (
+    <Root>
+      <React.Suspense fallback={<em>Loading...</em>}>
         <main>
-          <Helmet title="Benoit Zohar" />
-          <Suspense fallback={null}>
-            <View />
-          </Suspense>
+          <Menu />
+          <Router>
+            <Routes path="*" />
+          </Router>
         </main>
-      </Router>
-    );
-  }
+      </React.Suspense>
+    </Root>
+  );
 }
 
 export default App;
