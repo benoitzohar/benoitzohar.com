@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import glob from "glob";
 
 export default {
-  siteRoot: "https://www.benoitzohar.com",
+  //siteRoot: "https://www.benoitzohar.com",
   getRoutes: async () => {
     const files = glob.sync("./posts/*.md");
 
@@ -12,12 +12,17 @@ export default {
       const date = new Date(filename.substr(0, 10));
       const slug = filename.substr(11).replace(".md", "");
       const content = String(readFileSync(filepath)) || "";
-      const title = content.split("\n")[0].replace("# ", "");
+      const rows = content.split("\n");
+      const title = rows.find(row => row.startsWith("# ")).replace("# ", "");
+      const description = rows
+        .find(row => row.startsWith("> "))
+        .replace("> ", "");
 
       return {
         slug,
         date,
         title,
+        description,
         content
       };
     });

@@ -1,17 +1,23 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useRouteData } from "react-static";
 import ReactMarkdown from "react-markdown";
-//
-import { Link } from "@reach/router";
+
+import Meta from "../components/Meta";
 
 export default function Post() {
   const { post } = useRouteData();
 
   return (
-    <div>
-      <Link to="/blog/">{"<"} Back</Link>
-      <br />
-      <ReactMarkdown source={post.content} />
-    </div>
+    <Fragment>
+      <Meta
+        title={post.title}
+        description={post.description}
+        publishedAt={post.date}
+        url={document && document.location.href}
+      />
+      <article className="post">
+        <ReactMarkdown source={post.content} />
+      </article>
+    </Fragment>
   );
 }

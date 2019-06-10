@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 import HomeLink from "../components/HomeLink";
 import Meta from "../components/Meta";
 import Avatar from "../assets/avatar-round.svg";
 import TwitterIcon from "../assets/icons/twitter.svg";
-import BlogIcon from "../assets/icons/twitter.svg";
+import BlogIcon from "../assets/icons/blog.svg";
 import LinkedInIcon from "../assets/icons/linkedin.svg";
 import GithubIcon from "../assets/icons/github.svg";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Root, Routes } from "react-static";
-import { Router } from "@reach/router";
+import { Router, Match } from "@reach/router";
 
 import Menu from "./components/Menu";
 
@@ -11,7 +11,7 @@ function App() {
     <Root>
       <React.Suspense fallback={<em>Loading...</em>}>
         <main>
-          <Menu />
+          <Match path="/">{props => !props.match && <Menu />}</Match>
           <Router>
             <Routes path="*" />
           </Router>

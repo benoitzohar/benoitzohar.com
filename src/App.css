@@ -2,7 +2,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   background-image: linear-gradient(
     141deg,
     #fefefe 0%,
@@ -13,7 +13,7 @@ body {
 }
 
 main {
-  max-width: 38rem;
+  max-width: 50rem;
   margin: 2rem auto;
   color: #333;
 }
@@ -25,16 +25,6 @@ main {
 .avatar {
   height: 200px;
   width: 200px;
-}
-
-h1 {
-  font-weight: 400;
-  text-align: center;
-}
-
-h2 {
-  font-weight: 300;
-  text-align: center;
 }
 
 a {
@@ -51,6 +41,16 @@ a:hover {
   flex-direction: column;
 }
 
+.home h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.home h2 {
+  font-weight: 300;
+  text-align: center;
+}
+
 .home-links {
   display: flex;
   justify-content: space-around;
@@ -65,4 +65,80 @@ a:hover {
 .home-link > .icon {
   height: 20px;
   margin-bottom: 0.3em;
+}
+
+.menu {
+  display: flex;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  padding: 1em;
+}
+.menu a {
+  font-size: 1.2em;
+  padding: 0.4em 0.6em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.menu a:hover,
+.menu a.active {
+  border-bottom: 2px solid #21a4fb;
+  margin-bottom: 0px;
+}
+.menu a img {
+  height: 0.7em;
+  margin-right: 0.3em;
+}
+
+.blog {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog h2 {
+  text-align: center;
+}
+.blog ul {
+  list-style: none;
+}
+.blog ul > li {
+  padding: 1em;
+  background-color: #cccccc0d;
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+.blog ul > li:hover {
+  background-color: #44687c08;
+}
+.blog ul > li header {
+  display: block;
+  font-size: 1.3em;
+}
+.blog ul > li time {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #333;
+}
+.blog ul > li summary {
+  font-size: 0.9em;
+  color: #222;
+  margin-top: 0.4em;
+}
+
+.post h1 {
+  font-size: 2em;
+}
+.post blockquote {
+  border-left: 6px solid #fbe487;
+  margin: 0.8em;
+}
+.post blockquote > p {
+  color: #a2a2a2;
+  padding: 0.6em;
+  background-color: #fbe48726;
+  font-size: 1em;
+}
+.post p,
+.post li {
+  font-size: 1.1em;
 }

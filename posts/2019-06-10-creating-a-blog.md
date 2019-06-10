@@ -1,5 +1,7 @@
 # Creating a static blog
 
+> Describing how I changed my strategy regarding static site generation and why it helped me get closer to my goal in terms of performances.
+
 ## Evaluating options
 
 - tried [navi](https://frontarm.com/navi/en): 260kb of js not gzipped
