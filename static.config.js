@@ -3,6 +3,7 @@ import { readFileSync } from "fs";
 import glob from "glob";
 
 export default {
+  siteRoot: "https://www.benoitzohar.com",
   getRoutes: async () => {
     const files = glob.sync("./posts/*.md");
 
