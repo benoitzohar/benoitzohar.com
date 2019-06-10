@@ -13,7 +13,7 @@ export default function Post() {
         title={post.title}
         description={post.description}
         publishedAt={post.date}
-        url={document && document.location.href}
+        url={post.url}
       />
       <article className="post">
         <ReactMarkdown source={post.content} />

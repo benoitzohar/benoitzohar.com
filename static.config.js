@@ -2,8 +2,10 @@ import path from "path";
 import { readFileSync } from "fs";
 import glob from "glob";
 
+const URL = "https://www.benoitzohar.com";
+
 export default {
-  //siteRoot: "https://www.benoitzohar.com",
+  siteRoot: URL,
   getRoutes: async () => {
     const files = glob.sync("./posts/*.md");
 
@@ -17,13 +19,15 @@ export default {
       const description = rows
         .find(row => row.startsWith("> "))
         .replace("> ", "");
+      const url = `${URL}/blog/post/${slug}`;
 
       return {
         slug,
         date,
         title,
         description,
-        content
+        content,
+        url
       };
     });
 
