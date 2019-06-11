@@ -10,8 +10,8 @@ function App() {
   return (
     <Root>
       <React.Suspense fallback={<em>Loading...</em>}>
+        <Match path="/">{props => !props.match && <Menu />}</Match>
         <main>
-          <Match path="/">{props => !props.match && <Menu />}</Match>
           <Router>
             <Routes path="*" />
           </Router>

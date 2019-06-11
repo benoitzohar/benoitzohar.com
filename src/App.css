@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Source Sans Pro", sans-serif;
   margin: 0;
@@ -14,8 +18,10 @@ body {
 
 main {
   max-width: 50rem;
-  margin: 2rem auto;
+  padding: 0.4rem 1rem;
   color: #333;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 *::selection {
@@ -39,6 +45,8 @@ a:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 .home h1 {
@@ -69,9 +77,10 @@ a:hover {
 
 .menu {
   display: flex;
-  margin-top: -2rem;
-  margin-bottom: 2rem;
   padding: 1em;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu a {
   font-size: 1.2em;
@@ -86,7 +95,7 @@ a:hover {
   margin-bottom: 0px;
 }
 .menu a img {
-  height: 0.7em;
+  height: 0.8em;
   margin-right: 0.3em;
 }
 
@@ -95,11 +104,9 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.blog h2 {
-  text-align: center;
-}
 .blog ul {
   list-style: none;
+  padding-left: 0;
 }
 .blog ul > li {
   padding: 1em;
@@ -120,7 +127,7 @@ a:hover {
   color: #333;
 }
 .blog ul > li summary {
-  font-size: 0.9em;
+  font-size: 1em;
   color: #222;
   margin-top: 0.4em;
 }
@@ -141,4 +148,17 @@ a:hover {
 .post p,
 .post li {
   font-size: 1.1em;
+  word-wrap: break-word;
+}
+.post img {
+  max-width: 100%;
+  padding: 1em;
+}
+.post code {
+  font-size: 1.1em;
+  color: #00000091;
+  padding: 0 0.2em;
+}
+.post pre {
+  overflow-x: scroll;
 }
