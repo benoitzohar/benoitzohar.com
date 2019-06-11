@@ -3,7 +3,7 @@ import { readFileSync } from "fs";
 import glob from "glob";
 
 const URL = process.env.URL;
-
+console.log("URL", URL);
 export default {
   siteRoot: URL,
   getRoutes: async () => {
