@@ -2,8 +2,11 @@ import path from "path";
 import { readFileSync } from "fs";
 import glob from "glob";
 
-const URL = process.env.URL;
-console.log("URL", URL);
+const URL =
+  process.env.CONTEXT === "production"
+    ? process.env.URL
+    : process.env.DEPLOY_URL;
+
 export default {
   siteRoot: URL,
   getRoutes: async () => {
