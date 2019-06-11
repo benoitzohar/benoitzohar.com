@@ -2,7 +2,7 @@ import path from "path";
 import { readFileSync } from "fs";
 import glob from "glob";
 
-const URL = "https://www.benoitzohar.com";
+const URL = process.env.URL;
 
 export default {
   siteRoot: URL,
