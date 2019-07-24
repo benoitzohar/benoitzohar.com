@@ -28,6 +28,7 @@
     "eslint-plugin-import": "2.x",
     "eslint-plugin-jsx-a11y": "6.x",
     "eslint-plugin-react": "7.x",
+    "react-hot-loader": "4.12.9",
     "serve": "10.1.2"
   }
 }
