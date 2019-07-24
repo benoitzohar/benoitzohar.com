@@ -1,10 +1,12 @@
 # Using Google Fonts properly
 
+> How and why I have chosen to use Google Fonts.
+
 ## What happened to variable fonts?
 
-In [this post](https://benoitzohar.com/blog/TODO) I wrote that I wanted to experiment with variable fonts. After looking online for a good open source variable font, I found the one I wanted to use on my website: Source Sans.
+In [this post](https://benoitzohar.com/blog/post/intro) I wrote that I wanted to experiment with variable fonts. After looking online for a good open source variable font, I found the one I wanted to use on my website: Source Sans.
 
-The problem is that I couldn't find a variable version of `Source Sans` in `woff2`, so the entire loaded font weighted `55kb`. Compared to 2 non-variable font files in `woff2`, which weight `26kb` combined, and since I'm only using 2 `font-weight`s: 300 and 400 so far. Using non-variable fonts seams to be the way to go.
+The problem is that I couldn't find a light variable version of `Source Sans` in `woff2`, so the entire loaded font weighted `123kb`. Compared to 2 non-variable font files in `woff2`, which weight `26kb` combined, and since I'm only using 2 `font-weight`s: 300 and 400 so far. Using non-variable fonts seems to be the way to go.
 
 ## To host or not to host (the custom fonts)
 

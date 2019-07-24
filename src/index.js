@@ -1,11 +1,34 @@
 import React from "react";
-import { hydrate, render } from "react-dom";
-import "./index.css";
+import ReactDOM from "react-dom";
+import { AppContainer } from "react-hot-loader";
+
 import App from "./App";
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
-} else {
-  render(<App />, rootElement);
+// We export the top level component as JSX for static rendering
+export default App;
+
+if (typeof document !== "undefined") {
+  const target = document.getElementById("root");
+
+  const renderMethod = target.hasChildNodes()
+    ? ReactDOM.hydrate
+    : ReactDOM.render;
+
+  const render = Comp => {
+    renderMethod(
+      <AppContainer>
+        <Comp />
+      </AppContainer>,
+      target
+    );
+  };
+
+  render(App);
+
+  // Hot Module Replacement (dev only)
+  if (module && module.hot) {
+    module.hot.accept("./App", () => {
+      render(App);
+    });
+  }
 }
