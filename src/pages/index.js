@@ -41,8 +41,7 @@ export default function Home() {
       <img className="avatar" src={Avatar} alt="Avatar" />
       <h1>Benoit Zohar</h1>
       <h2>
-        Senior Fullstack Developer @{" "}
-        <a href="https://www.busbud.com/en">Busbud</a>
+        Senior Web Developer @ <a href="https://www.shopify.com">Shopify</a>
       </h2>
       <div className="home-links">
         {links.map(link => (
