@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@mdx-js/loader": "1.0.0-rc.4",
-    "@reach/router": "^1.2.1",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "@reach/router": "1.2.1",
+    "react": "16.8.2",
+    "react-dom": "16.8.2",
     "react-markdown": "4.0.8",
-    "react-static": "^7.0.0",
-    "react-static-plugin-reach-router": "^7.0.0",
-    "react-static-plugin-sitemap": "^7.0.0",
-    "react-static-plugin-source-filesystem": "^7.0.0"
+    "react-static": "7.0.0",
+    "react-static-plugin-reach-router": "7.0.0",
+    "react-static-plugin-sitemap": "7.0.0",
+    "react-static-plugin-source-filesystem": "7.0.0"
   },
   "devDependencies": {
     "babel-eslint": "9.x",
     "eslint": "5.x",
-    "eslint-config-react-app": "^3.0.8",
+    "eslint-config-react-app": "3.0.8",
     "eslint-config-react-tools": "1.x.x",
     "eslint-plugin-flowtype": "2.x",
     "eslint-plugin-import": "2.x",
