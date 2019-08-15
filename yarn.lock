@@ -2097,6 +2097,11 @@ cliui@^4.0.0:
     strip-ansi "^4.0.0"
     wrap-ansi "^2.0.0"
 
+cloudinary-core@^2.7.3:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/cloudinary-core/-/cloudinary-core-2.7.3.tgz#20c091f412e4970e5518ea0d7f06f4f3013b609b"
+  integrity sha512-orF0sjYsiDkE9pl82RNXFwjgKynSIpNNdtLT8GEIxEYZLKlxW/JliArILqzyZdsdkuF0R2foFxxPnZvtymfWpQ==
+
 coa@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/coa/-/coa-2.0.2.tgz#43f6c21151b4ef2bf57187db0d73de229e3e7ec3"
@@ -6911,7 +6916,7 @@ react-helmet@^5.2.0:
     prop-types "^15.5.4"
     react-side-effect "^1.1.0"
 
-react-hot-loader@^4.12.9:
+react-hot-loader@4.12.9:
   version "4.12.9"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.12.9.tgz#cb2a85731ca38366b0e9e28e7fd1dbd7dcacc1ef"
   integrity sha512-lWT3JpWUN7nGHSoI9c4MV+42ov79bd8aqwDzhoyKev3owIh+hbEivT6Mb81lCV6tWuqm9trKo2/Th2/YDhFCdw==

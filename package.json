@@ -11,6 +11,7 @@
   "dependencies": {
     "@mdx-js/loader": "1.0.0-rc.4",
     "@reach/router": "1.2.1",
+    "cloudinary-core": "2.7.3",
     "react": "16.8.2",
     "react-dom": "16.8.2",
     "react-markdown": "4.0.8",
