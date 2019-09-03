@@ -15,7 +15,10 @@ Ok, so how can we make this better? 👇
 
 ## Use an image CDN
 
+
+
 ## Implement lazy loading
 
 ## Use responsive images
+
 
