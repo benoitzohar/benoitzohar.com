@@ -162,3 +162,47 @@ a:hover {
 .post pre {
   overflow-x: scroll;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: none;
+    background-color: #252831;
+  }
+  main {
+    color: white;
+  }
+  a {
+    color: #f3ea66;
+  }
+  a:hover {
+    color: #21a4fb;
+  }
+
+  .home-link > .icon,
+  .menu a:not(:first-child) img {
+    filter: invert(90%);
+  }
+
+  .blog ul > li {
+    background-color: #666;
+  }
+  .blog ul > li:hover {
+    background-color: #444;
+  }
+  .blog ul > li time,
+  .blog ul > li summary {
+    color: #eee;
+  }
+
+  .post blockquote {
+    border-left: 6px solid #fbe487;
+  }
+  .post blockquote > p {
+    color: #ccc;
+    background-color: #444;
+  }
+
+  .post code {
+    color: #fefefe;
+  }
+}
