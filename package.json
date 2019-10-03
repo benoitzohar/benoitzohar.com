@@ -1,5 +1,5 @@
 {
-  "name": "react-static-example-basic",
+  "name": "benoitzohar.com",
   "private": true,
   "scripts": {
     "start": "react-static start",
@@ -9,15 +9,15 @@
     "serve": "serve dist -p 3000"
   },
   "dependencies": {
-    "@mdx-js/loader": "1.0.0-rc.4",
+    "@mdx-js/loader": "1.5.0",
     "@reach/router": "1.2.1",
-    "react": "16.8.2",
-    "react-dom": "16.8.2",
-    "react-markdown": "4.0.8",
-    "react-static": "7.0.0",
-    "react-static-plugin-reach-router": "7.0.0",
-    "react-static-plugin-sitemap": "7.0.0",
-    "react-static-plugin-source-filesystem": "7.0.0"
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "react-markdown": "4.2.2",
+    "react-static": "7.2.2",
+    "react-static-plugin-reach-router": "7.2.2",
+    "react-static-plugin-sitemap": "7.2.2",
+    "react-static-plugin-source-filesystem": "7.2.2"
   },
   "devDependencies": {
     "babel-eslint": "9.x",
