@@ -60,10 +60,10 @@ This is the code I added in `<head>` :
 This allows my fonts to be loaded faster since the entire connection to the server is done as soon as the `<head>` is parsed.
 
 Before **without preconnect**:
-![Screenshot showing the DNS lookup, TLS negotiation and TCP handshake begin made ahead of time](https://i.ibb.co/YZ1npJV/Screenshot-2019-06-05-00-05-14.png)
+![Screenshot showing the DNS lookup, TLS negotiation and TCP handshake begin made ahead of time](2019-06-03-1_motegz)
 
 After **with preconnect**:
-![Screenshot showing the DNS lookup, TLS negotiation and TCP handshake begin made ahead of time](https://i.ibb.co/DpnKHMw/Screenshot-2019-06-04-23-58-39.png)
+![Screenshot showing the DNS lookup, TLS negotiation and TCP handshake begin made ahead of time](2019-06-03-2_uoxgsk)
 
 ## Notes about react-snap
 
@@ -80,7 +80,7 @@ If you look into a Google Fonts generated css, you'll see that every subset is t
 Since I my website will only contain latin characters I don't need other subset.
 Google Fonts doesn't support adding `&subset=latin` in their api URL for [browsers which supports unicode-range subsetting](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization), which is now pretty [well supported](https://caniuse.com/#search=unicode-range):
 
-![Screenshot of supported browsers for unicode-range](https://i.ibb.co/9cPdwdL/Screenshot-2019-06-04-23-55-27.png)
+![Screenshot of supported browsers for unicode-range](2019-06-03-3_lmcc55)
 
 The browser actually use this line to figure out what font it should load or not:
 
