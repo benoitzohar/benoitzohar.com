@@ -2,7 +2,7 @@
   "name": "benoitzohar.com",
   "private": true,
   "scripts": {
-    "start": "react-static start",
+    "dev": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
     "analyze": "react-static build --analyze",
