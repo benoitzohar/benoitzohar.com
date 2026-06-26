@@ -44,14 +44,17 @@ const links = [
 ];
 
 const projects = [
-  { name: "EveTools", icon: EveToolsIcon, href: "https://evetools.app" },
   { name: "Dashbd", icon: DashbdIcon, href: "https://dashbd.com" },
   { name: "Calendar", icon: CalendarIcon, href: "https://dashbd.com/calendar" },
   { name: "Apnia", icon: ApniaIcon, href: "https://apnia.co" },
   { name: "Flame", icon: FlameIcon, href: "https://useflame.app" },
   { name: "EventWipe", icon: EventWipeIcon, href: "https://eventwipe.com" },
   { name: "Spino", icon: SpinoIcon, href: "https://spino.tapadi.uno" },
-  { name: "Pewsteroids!", icon: PewsteroidsIcon, href: "https://pew.tapadi.uno" },
+  {
+    name: "Pewsteroids!",
+    icon: PewsteroidsIcon,
+    href: "https://pew.tapadi.uno",
+  },
 ];
 
 export default function Home() {
