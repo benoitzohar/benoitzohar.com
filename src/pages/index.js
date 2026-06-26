@@ -14,12 +14,12 @@ const links = [
     title: "Blog",
     href: "/blog",
   },
-  {
+  /*   {
     icon: TwitterIcon,
     title: "Twitter",
     href: "https://twitter.com/benoitzohar",
     external: true,
-  },
+  }, */
   {
     icon: LinkedInIcon,
     title: "LinkedIn",
@@ -41,11 +41,17 @@ export default function Home() {
       <img className="avatar" src={Avatar} alt="Avatar" />
       <h1>Benoit Zohar</h1>
       <h2>
-        Staff Engineer @ <a href="https://arcade.software">Arcade</a>
+        Co-Founder @ <a href="https://evetools.app">EveTools</a>
+      </h2>
+      <h2>
+        Founder @ <a href="https://dashbd.com">Dashbd</a>
       </h2>
       <h2 style={{ marginTop: 2 }}>
-        Creator of apps like <a href="https://dashbd.com">Dashbd</a>,{" "}
-        <a href="https://alesta.app">Alesta</a> and{" "}
+        Creator of many apps like <a href="https://dashbd.com">Dashbd</a>,{" "}
+        <a href="https://dashbd.com/calendar">Calendar</a>,{" "}
+        <a href="https://apnia.co">Apnia</a>,{" "}
+        <a href="https://useflame.app">Flame</a>,{" "}
+        <a href="https://spino.tapadi.uno">Spino</a> and{" "}
         <a href="https://pew.tapadi.uno">Pewsteroids!</a>
       </h2>
       <div className="home-links">
