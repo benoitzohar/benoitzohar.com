@@ -46,11 +46,12 @@ export default function Home() {
       <h2>
         Founder @ <a href="https://dashbd.com">Dashbd</a>
       </h2>
-      <h2 style={{ marginTop: 2 }}>
+      <h2>
         Creator of many apps like <a href="https://dashbd.com">Dashbd</a>,{" "}
         <a href="https://dashbd.com/calendar">Calendar</a>,{" "}
         <a href="https://apnia.co">Apnia</a>,{" "}
         <a href="https://useflame.app">Flame</a>,{" "}
+        <a href="https://eventwipe.com">EventWipe</a>,{" "}
         <a href="https://spino.tapadi.uno">Spino</a> and{" "}
         <a href="https://pew.tapadi.uno">Pewsteroids!</a>
       </h2>
