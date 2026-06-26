@@ -1,6 +1,9 @@
 {
   "name": "benoitzohar.com",
   "private": true,
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider react-static start",
     "stage": "NODE_OPTIONS=--openssl-legacy-provider react-static build --staging",
